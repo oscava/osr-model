@@ -1,0 +1,26 @@
+{
+  "name": "osr-model",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscava/osr-model.git"
+  },
+  "keywords": [
+    "osr",
+    "model"
+  ],
+  "author": "cava.zhang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscava/osr-model/issues"
+  },
+  "homepage": "https://github.com/oscava/osr-model#readme"
+}
