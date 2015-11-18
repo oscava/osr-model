@@ -1,21 +1,27 @@
-var OSRModel = require("../");
-require("./mongodb");
-var Demo = OSRModel.model({
-	name: "Demo",
-	schema:{
-		name:		{ type: String, index: true, required: true, unique: true },
-		time:		{ type: Number },
-	}
+var Mongoose = require("mongoose");
+
+var Model = require("../");
+
+var conn = Mongoose.createConnection("mongodb://127.0.0.1/Demo");
+
+var User = Model.define("User",{
+	uname:{ type:String, index: true },
+	upass:{ type:String, index: true }
+});
+User.pre("save",function(next,done){
+	console.log(arguments);
+	this.upass = this.uname+"Hello:password";
+	done("你好，不小心报错了");
 });
 
-var demo  = new Demo({ name: "demo", time: Date.now() });
-
-demo.save( function( err, obj ){
-	demo.findOne( { name: obj.name }, function( err, obj ){
-		console.log( err, obj );
-	})
+User.post("save",function(){
+	console.log("post:save",arguments);
 });
 
-// Demo.findOne({ name:"hello"}, function( err, one ){
-	// console.log(err, one);
-// })
+var ModelUser = new User(conn);
+
+ModelUser.create({
+	uname:"DemoName"
+},function(err,usr){
+	console.log(err,usr);
+});
