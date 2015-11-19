@@ -1,0 +1,95 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'E:\\oscava-lib\\osr-model',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\Cavacn\AppData\Roaming\npm-cache\osr-model\0.1.1\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\Cavacn\\AppData\\Roaming\\npm-cache\\osr-model\\0.1.1\\package.tgz',
+9 verbose tar pack   'E:\\oscava-lib\\osr-model' ]
+10 verbose tarball C:\Users\Cavacn\AppData\Roaming\npm-cache\osr-model\0.1.1\package.tgz
+11 verbose folder E:\oscava-lib\osr-model
+12 info prepublish osr-model@0.1.1
+13 verbose addLocalTarball adding from inside cache C:\Users\Cavacn\AppData\Roaming\npm-cache\osr-model\0.1.1\package.tgz
+14 silly cache afterAdd osr-model@0.1.1
+15 verbose afterAdd C:\Users\Cavacn\AppData\Roaming\npm-cache\osr-model\0.1.1\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\Cavacn\AppData\Roaming\npm-cache\osr-model\0.1.1\package\package.json written
+17 silly publish { name: 'osr-model',
+17 silly publish   version: '0.1.1',
+17 silly publish   main: 'index.js',
+17 silly publish   directories: { example: 'example', test: 'test' },
+17 silly publish   scripts: { test: 'mocha' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/oscava/osr-model.git' },
+17 silly publish   keywords: [ 'osr', 'model' ],
+17 silly publish   author: { name: 'cava.zhang' },
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/oscava/osr-model/issues' },
+17 silly publish   homepage: 'https://github.com/oscava/osr-model#readme',
+17 silly publish   description: '',
+17 silly publish   gitHead: 'f9c2b033adedc5e81e79229b07b6908edfa167c5',
+17 silly publish   readme: 'ERROR: No README data found!',
+17 silly publish   _id: 'osr-model@0.1.1',
+17 silly publish   _shasum: '64d6aa88d7d491fda3d65f95877bc451c22c108e',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name osr-model
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/osr-model
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading C:\Users\Cavacn\AppData\Roaming\npm-cache\osr-model\0.1.1\package.tgz
+25 verbose request uri https://registry.npmjs.org/osr-model
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 15:05:46
+28 verbose request using bearer token for auth
+29 verbose request id 688da691adf7f924
+30 http request PUT https://registry.npmjs.org/osr-model
+31 http 403 https://registry.npmjs.org/osr-model
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Thu, 19 Nov 2015 07:05:48 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-nrt6129-NRT',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1447916748.477549,VS0,VE149' }
+33 verbose request invalidating C:\Users\Cavacn\AppData\Roaming\npm-cache\registry.npmjs.org\osr-model on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.1.1." : osr-model
+35 verbose stack     at makeError (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+35 verbose stack     at CachingRegistryClient.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+35 verbose stack     at Request._callback (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+35 verbose stack     at Request.self.callback (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1063:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+36 verbose statusCode 403
+37 verbose pkgid osr-model
+38 verbose cwd E:\oscava-lib\osr-model
+39 error Windows_NT 6.1.7600
+40 error argv "D:\\Program Files\\nodejs\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+41 error node v4.2.2
+42 error npm  v2.14.7
+43 error code E403
+44 error "You cannot publish over the previously published version 0.1.1." : osr-model
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]

@@ -1,9 +1,9 @@
 {
   "name": "osr-model",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.1",
   "main": "index.js",
   "directories": {
+    "example": "example",
     "test": "test"
   },
   "scripts": {
@@ -22,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/oscava/osr-model/issues"
   },
-  "homepage": "https://github.com/oscava/osr-model#readme"
+  "homepage": "https://github.com/oscava/osr-model#readme",
+  "description": ""
 }
